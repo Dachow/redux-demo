@@ -1,16 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore, bindActionCreators } from 'redux';
-import { Provider, connect } from 'react-redux';
+import { Provider } from 'react-redux';
 
 // import components
 
 // Counter
-import { store, Counter } from './counter/Counter.js';
+// import { store, Counter } from './redux-counter/Counter.js';
+
+// TodoList
+import { store } from './TodoList/reducer.js';
+import TodoList from './TodoList/containers/App.js';
+
+console.log(store);
 
 ReactDOM.render(
 	<Provider store={store}>
-		<Counter />
+		{/*<Counter />*/}
+		<TodoList />
 	</Provider>,
 	document.getElementById('root')
 );

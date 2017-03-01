@@ -63,6 +63,8 @@ class Counter extends React.Component {
 		)
     }
 }
+
+
 function mapStateToProps(state) {
 	return {
 		value: state
