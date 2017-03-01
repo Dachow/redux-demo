@@ -8,10 +8,8 @@ import { Provider } from 'react-redux';
 // import { store, Counter } from './redux-counter/Counter.js';
 
 // TodoList
-import { store } from './TodoList/reducer.js';
-import TodoList from './TodoList/containers/App.js';
-
-console.log(store);
+import store from './TodoList/reducer.js';
+import TodoList from './TodoList/components/App';
 
 ReactDOM.render(
 	<Provider store={store}>

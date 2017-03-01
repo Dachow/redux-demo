@@ -14,7 +14,7 @@ let AddTodo = ({ dispatch }) => {
                 dispatch(addTodo(_input.value));
                 _input.value = '';
             }}>
-                <input ref={el => this._input = el} />
+                <input ref={el => _input = el} />
                 <button type='submit'> Add Todo </button>
             </form>
         </div>

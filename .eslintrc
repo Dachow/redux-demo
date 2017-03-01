@@ -14,4 +14,7 @@
     //     "sourceType": "module",
     //     "allowImportExportEverywhere": false
     // }
+
+    // =========================== from web ===========================
+    // http://json.schemastore.org/eslintrc
 }

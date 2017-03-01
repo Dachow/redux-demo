@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux';
+import { createStore } from 'redux';
 
 const todo = (state, action) => {
     switch (action.type) {
@@ -52,4 +53,4 @@ const todoApp = combineReducers({
 })
 
 
-export default todoApp;
+export default createStore(todoApp);
