@@ -3,6 +3,7 @@ var path = require("path");
 
 module.exports = {
 	entry: './dev/entry.jsx', // 入口文件
+	devtool: 'source-map',
 	output: {
 		path: path.resolve(__dirname, './dist/js/'),
 		filename: 'bundle.js', // 打包输出的文件

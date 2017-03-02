@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { addTodo } from '../actions';
+import store from '../reducer.js';
 
 let AddTodo = ({ dispatch }) => {
     let _input;
@@ -8,6 +9,7 @@ let AddTodo = ({ dispatch }) => {
         <div>
             <form onSubmit={e => {
                 e.preventDefault();
+                console.log(store.getState());
                 if (!_input.value.trim()) {
                     return
                 }

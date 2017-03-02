@@ -15,10 +15,12 @@ const getVisibleTodos = (todos, filter) => {
     }
 }
 
+// todos返回一个 getVisibleTodos 计算后的数组
 const mapStateToProps = (state) => ({
     todos: getVisibleTodos(state.todos, state.visibilityFilter)
 })
 
+// 每次dispatch一个action时，调用reducer处理函数，返回一个新state
 const mapDispatchToProps = {
     onTodoClick: toggleTodo
 }

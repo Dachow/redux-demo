@@ -11,6 +11,7 @@ import { Provider } from 'react-redux';
 import store from './TodoList/reducer.js';
 import TodoList from './TodoList/components/App';
 
+
 ReactDOM.render(
 	<Provider store={store}>
 		{/*<Counter />*/}
