@@ -8,14 +8,17 @@ import { Provider } from 'react-redux';
 // import { store, Counter } from './redux-counter/Counter.js';
 
 // TodoList
-import store from './TodoList/reducer.js';
-import TodoList from './TodoList/components/App';
+// import store from './TodoList/reducer.js';
+// import TodoList from './TodoList/components/App';
 
+// Reddit
+import Root from './reddit/containers/Root.js'
 
 ReactDOM.render(
-	<Provider store={store}>
-		{/*<Counter />*/}
+	/*<Provider store={store}>
+		<Counter />
 		<TodoList />
-	</Provider>,
+	</Provider>,*/
+  <Root />,
 	document.getElementById('root')
 );
